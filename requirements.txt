@@ -1,0 +1,67 @@
+certifi==2023.11.17
+charset-normalizer==3.3.2
+colorama==0.4.6
+filelock==3.13.1
+fsspec==2023.12.2
+huggingface-hub==0.20.1
+idna==3.6
+Jinja2==3.1.2
+MarkupSafe==2.1.3
+mpmath==1.3.0
+networkx==3.2.1
+numpy==1.26.2
+packaging==23.2
+PyYAML==6.0.1
+regex==2023.10.3
+requests==2.31.0
+safetensors>=0.4.5
+sympy==1.13.1
+tokenizers>=0.15.0
+torch>=2.1.0
+tqdm==4.66.1
+transformers==4.36.2
+typing_extensions==4.9.0
+urllib3==2.1.0
+ollama>=0.3.0
+
+# IPA Core Dependencies
+psutil>=5.9.0  # System and process monitoring
+pynput>=1.7.6  # Keyboard and mouse input detection
+typer[all]>=0.9.0  # CLI framework
+rich>=13.0.0  # Beautiful terminal output
+pydantic>=2.0.0  # Data validation
+python-dateutil>=2.8.0  # Date parsing
+
+# Windows-specific features (Windows 10/11)
+# Install these for full Windows functionality
+winotify>=1.1.0  # Native Windows toast notifications
+pystray>=0.19.5  # System tray icon
+Pillow>=10.0.0  # Icon generation and image support
+pywin32>=306; sys_platform == 'win32'  # Windows Service support
+PyQt6>=6.6.0  # Modern desktop notification overlays
+
+# Web Dashboard
+fastapi>=0.104.0  # Modern async web framework
+uvicorn[standard]>=0.24.0  # ASGI server
+websockets>=12.0  # Real-time updates
+python-multipart>=0.0.6  # Form data support
+aiofiles>=23.2.1  # Async file operations
+
+# Database & ORM
+sqlalchemy>=2.0.0  # SQL toolkit and ORM
+alembic>=1.12.0  # Database migrations
+
+# Additional utilities
+python-dotenv>=1.0.0  # Environment variable management
+schedule>=1.2.0  # Task scheduling
+
+# Langchain & RAG
+langchain>=0.1.0  # LLM application framework
+langchain-community>=0.0.20  # Community integrations
+langchain-ollama>=0.1.0  # Ollama integration for Langchain
+chromadb>=0.4.22  # Vector database for embeddings
+sentence-transformers>=2.2.2  # Sentence embeddings
+tiktoken>=0.5.0  # Token counting for OpenAI models
+
+# Installer (for building .msi/.exe)
+# cx-Freeze>=6.15.0  # Uncomment to build installer
